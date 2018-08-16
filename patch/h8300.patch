@@ -1,0 +1,16 @@
+55,56c55,56
+< static void h8300_emit_stack_adjustment (int, unsigned int);
+< static int round_frame_size (int);
+---
+> static void h8300_emit_stack_adjustment (int, HOST_WIDE_INT);
+> static HOST_WIDE_INT round_frame_size (HOST_WIDE_INT);
+371c371
+< h8300_emit_stack_adjustment (int sign, unsigned int size)
+---
+> h8300_emit_stack_adjustment (int sign, HOST_WIDE_INT size)
+400,401c400,401
+< static int
+< round_frame_size (int size)
+---
+> static HOST_WIDE_INT
+> round_frame_size (HOST_WIDE_INT size)
