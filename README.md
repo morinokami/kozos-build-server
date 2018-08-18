@@ -5,7 +5,7 @@ $ docker run -it --rm -v "$PWD":/app -w /app shf0811/kozos-build-server [COMMAND
 ```
 
 ## 使用例
-ビルドをおこなうには、Makefileの置いてあるフォルダに移動した上で、:
+ビルドをおこなうには、Makefileの置いてあるフォルダに移動した上で、
 ```bash
 $ docker run -it --rm -v "$PWD":/app -w /app shf0811/kozos-build-server make
 $ docker run -it --rm -v "$PWD":/app -w /app shf0811/kozos-build-server make image
